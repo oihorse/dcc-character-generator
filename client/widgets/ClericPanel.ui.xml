@@ -1,0 +1,91 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	/* Add CSS here. See the GWT docs on UI Binder for more details */
+	.important {
+		font-weight: bold;
+	}
+	
+	.headerStyle {
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.cellTextCenter {
+		text-align: center;
+	}
+	</ui:style>
+	<g:VerticalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Deity:</g:Label>
+			<g:TextBox ui:field="deityBox"></g:TextBox>
+			<g:Label>Spell Check:</g:Label>
+			<g:TextBox ui:field="spellCheckBox"></g:TextBox>
+		</g:HorizontalPanel>
+		<g:Grid>
+			<g:row styleName="headerStyle">
+				<g:cell>Lay On Hands (names / alignment step)</g:cell>
+				<g:cell>12</g:cell>
+				<g:cell>14</g:cell>
+				<g:cell>20</g:cell>
+				<g:cell>22+</g:cell>
+			</g:row>
+			<g:row styleName="cellTextCenter">
+				<g:customCell>
+					<g:TextArea>(same)</g:TextArea>
+				</g:customCell>
+				<g:cell>
+					2 dice
+				</g:cell>
+				<g:cell>
+					3 dice
+				</g:cell>
+				<g:cell>
+					4 dice
+				</g:cell>
+				<g:cell>
+					5 dice
+				</g:cell>
+			</g:row>
+			<g:row styleName="cellTextCenter">
+				<g:customCell>
+					<g:TextArea>(adjacent)</g:TextArea>
+				</g:customCell>
+				<g:cell>
+					1 dice
+				</g:cell>
+				<g:cell>
+					2 dice
+				</g:cell>
+				<g:cell>
+					3 dice
+				</g:cell>
+				<g:cell>
+					4 dice
+				</g:cell>
+			</g:row>
+			<g:row styleName="cellTextCenter">
+				<g:customCell>
+					<g:TextArea>(opposed)</g:TextArea>
+				</g:customCell>
+				<g:cell>
+					1 dice
+				</g:cell>
+				<g:cell>
+					1 dice
+				</g:cell>
+				<g:cell>
+					2 dice
+				</g:cell>
+				<g:cell>
+					3 dice
+				</g:cell>
+			</g:row>
+		</g:Grid>
+		<g:VerticalPanel>
+			<g:Label>Spells:</g:Label>
+			<g:TextArea></g:TextArea>
+		</g:VerticalPanel>
+	</g:VerticalPanel>
+</ui:UiBinder> 

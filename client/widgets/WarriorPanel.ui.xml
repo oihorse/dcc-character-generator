@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	/* Add CSS here. See the GWT docs on UI Binder for more details */
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:VerticalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Critical threat range:</g:Label>
+			<g:TextBox ui:field="threatRangeBox"></g:TextBox>
+		</g:HorizontalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Lucky Weapon:</g:Label>
+			<g:TextBox ui:field="luckyWeaponBox"></g:TextBox>
+		</g:HorizontalPanel>
+		<g:VerticalPanel>
+			<g:Label>Notes:</g:Label>
+			<g:TextArea></g:TextArea>
+		</g:VerticalPanel>
+
+	</g:VerticalPanel>
+
+</ui:UiBinder> 

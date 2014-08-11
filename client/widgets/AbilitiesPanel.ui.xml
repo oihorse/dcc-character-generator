@@ -1,0 +1,107 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:gxt="urn:import:com.sencha.gxt.widget.core.client"
+	xmlns:container="urn:import:com.sencha.gxt.widget.core.client.container">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	
+	.abilityRight {
+		font-size: 20px;
+		text-align: right;
+		background-color: transparent;
+		padding-right: 2px;
+
+	}
+	
+	.abilityLeft {
+		font-size: 20px;
+		text-align: left;
+		background-color: transparent;
+		border: none;
+		width: 25px;
+
+	}
+	
+	.modifierRight {
+		font-size: 11px;
+		background-color: transparent;
+		border: none;
+		padding-right: 2px;
+		
+	}
+	
+	.modifierLeft {
+		font-size: 11px;
+		background-color: transparent;
+		border: none;
+		width: 10px;
+		
+	}
+	
+	.modifierBox {
+		background-color: #DDF07F;
+		border-bottom: 1px dotted black;
+		padding: 5px;
+	}
+	
+	.abilitiesPanel {
+		width: 100px;
+		height: 100px;
+		border: 1px solid black;
+		background-color: #C9E154;
+		padding: 5px;
+	}
+	
+	.abilitiesBox {
+		padding: 2px;
+	}
+	</ui:style>
+
+	<!-- <g:VerticalPanel ui:field="abilitiesPanel" styleName="{style.abilitiesPanel}"> 
+		<g:HorizontalPanel verticalAlignment="middle"> <g:Label text="Strength" styleName="{style.abilityRight}"></g:Label> 
+		<g:TextBox ui:field="strengthScore" styleName="{style.abilityLeft}"></g:TextBox> 
+		</g:HorizontalPanel> <g:HorizontalPanel ui:field="modifierBox" styleName="{style.modifierBox}" 
+		verticalAlignment="middle"> <g:Label text="modifier:" styleName="{style.modifierRight}"></g:Label> 
+		<g:TextBox ui:field="strengthModifier" styleName="{style.modifierLeft}"></g:TextBox> 
+		</g:HorizontalPanel> <g:HorizontalPanel verticalAlignment="middle"> <g:Label 
+		text="Agility" styleName="{style.abilityRight}"></g:Label> <g:TextBox ui:field="agilityScore" 
+		styleName="{style.abilityLeft}"></g:TextBox> </g:HorizontalPanel> <g:HorizontalPanel 
+		styleName="{style.modifierBox}" verticalAlignment="middle" > <g:Label text="modifier:" 
+		styleName="{style.modifierRight}"></g:Label> <g:TextBox ui:field="agilityModifier" 
+		styleName="{style.modifierLeft}"></g:TextBox> </g:HorizontalPanel> </g:VerticalPanel> -->
+
+	<!-- <g:FlowPanel styleName="{style.abilitiesPanel}"> <g:FlowPanel styleName="{style.abilitiesBox}"> 
+		<g:FlowPanel> <g:Label text="Strength" styleName="{style.abilityRight}"></g:Label> 
+		<g:TextBox ui:field="strengthScore" styleName="{style.abilityLeft}"></g:TextBox> 
+		</g:FlowPanel> <g:FlowPanel> <g:Label text="modifier:" styleName="{style.modifierRight}"></g:Label> 
+		<g:TextBox ui:field="strengthModifier" styleName="{style.modifierLeft}"></g:TextBox> 
+		</g:FlowPanel> </g:FlowPanel> <g:FlowPanel> <g:Label text="Agility" styleName="{style.abilityRight}"></g:Label> 
+		<g:TextBox ui:field="agilityScore" styleName="{style.abilityLeft}"></g:TextBox> 
+		</g:FlowPanel> <g:FlowPanel> <g:Label text="modifier:" styleName="{style.modifierRight}"></g:Label> 
+		<g:TextBox ui:field="agilityModifier" styleName="{style.modifierLeft}"></g:TextBox> 
+		</g:FlowPanel> </g:FlowPanel> -->
+
+	<g:FlowPanel styleName="{style.abilitiesPanel}">
+		<container:HBoxLayoutContainer>
+			<container:child>
+				<g:Label text="Strength" styleName="{style.abilityRight}"></g:Label>
+			</container:child>
+			<container:child>
+				<g:TextBox ui:field="strengthScore" styleName="{style.abilityLeft}"></g:TextBox>
+			</container:child>
+		</container:HBoxLayoutContainer>
+		<container:HBoxLayoutContainer styleName="{style.modifierBox}">
+			<container:child>
+				<g:Label text="modifier:" styleName="{style.modifierRight}"></g:Label>
+			</container:child>
+			<container:child>
+				<g:TextBox ui:field="strengthModifier" styleName="{style.modifierLeft}"></g:TextBox>
+			</container:child>
+		</container:HBoxLayoutContainer>
+	</g:FlowPanel>
+
+
+
+</ui:UiBinder> 

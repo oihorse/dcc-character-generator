@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:VerticalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Base spell check:</g:Label>
+			<g:TextBox ui:field="baseSpellCheckBox"></g:TextBox>
+			<g:Label>Familiar:</g:Label>
+			<g:TextBox ui:field="familiarBox"></g:TextBox>
+		</g:HorizontalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Patron(s):</g:Label>
+			<g:TextBox ui:field="patronBox"></g:TextBox>
+		</g:HorizontalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Corruption:</g:Label>
+			<g:TextBox ui:field="corruptionBox"></g:TextBox>
+		</g:HorizontalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Notes:</g:Label>
+			<g:TextArea ui:field="notesBox"></g:TextArea>
+		</g:HorizontalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Spells:</g:Label>
+			<g:TextArea ui:field="spellBox"></g:TextArea>
+		</g:HorizontalPanel>
+	</g:VerticalPanel>
+</ui:UiBinder> 

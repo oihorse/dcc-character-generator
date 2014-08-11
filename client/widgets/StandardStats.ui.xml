@@ -1,0 +1,198 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	/* Add CSS here. See the GWT docs on UI Binder for more details */
+	.important {
+		font-weight: bold;
+		background-color: #70DBDB;
+		border-color: none;
+		border: none;
+	}
+	
+	.center {
+		background-color: #70DBDB;
+		margin: 0px auto;
+		padding: 10px;
+	}
+	
+	.border {
+		border: 1px Black medium solid;
+	}
+	
+	.clearTextBox {
+		background-color: #70DBDB;
+	}
+	
+	.abilityPanel {
+		
+	}
+	
+	
+	
+	
+	</ui:style>
+	<g:HTMLPanel styleName="{style.center}">
+		<g:HorizontalPanel>
+			<g:VerticalPanel>
+				<g:HorizontalPanel styleName="{style.border}">
+					<g:VerticalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Name:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="nameBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Occupation:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="occupationBox"></g:TextBox>
+							<g:Label>Class:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="classBox"></g:TextBox>
+						</g:HorizontalPanel>
+					</g:VerticalPanel>
+					<g:VerticalPanel styleName="style.standardPanel">
+						<g:HorizontalPanel>
+							<g:Label>Title:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="titleBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:VerticalPanel>
+							<g:HorizontalPanel>
+								<g:Label>Alignment:</g:Label>
+								<g:TextBox styleName="{style.important}" ui:field="alignmentBox"></g:TextBox>
+								<g:Label>Speed:</g:Label>
+								<g:TextBox styleName="{style.important}" ui:field="speedBox"></g:TextBox>
+							</g:HorizontalPanel>
+							<g:HorizontalPanel>
+								<g:Label>Level:</g:Label>
+								<g:TextBox styleName="{style.important}" ui:field="levelBox"></g:TextBox>
+								<g:Label>XP:</g:Label>
+								<g:TextBox styleName="{style.important}" ui:field="xpBox"></g:TextBox>
+							</g:HorizontalPanel>
+						</g:VerticalPanel>
+					</g:VerticalPanel>
+				</g:HorizontalPanel>
+				<g:HorizontalPanel>
+					<g:Label>Armor Class:</g:Label>
+					<g:TextBox styleName="{style.important}" ui:field="armorClassBox"></g:TextBox>
+					<g:Label>Hit Points:</g:Label>
+					<g:TextBox styleName="{style.important}" ui:field="hitPointBox"></g:TextBox>
+					<g:VerticalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Initiative:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="initiativeBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Action die:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="actionDieBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Attack:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="attackBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Crit die:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="critDieBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Crit table:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="critTableBox"></g:TextBox>
+						</g:HorizontalPanel>
+					</g:VerticalPanel>
+				</g:HorizontalPanel>
+				<g:HorizontalPanel>
+					<g:VerticalPanel ui:field="abilityPanel" styleName="{style.abilityPanel}">
+					<!-- <g:HorizontalPanel>
+							<g:Label>Strength:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="strengthBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Agility:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="agilityBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Stamina:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="staminaBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Personality:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="personalityBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Luck:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="luckBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Intelligence:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="intelligenceBox"></g:TextBox>
+						</g:HorizontalPanel> -->
+					</g:VerticalPanel>
+					<g:VerticalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Reflex Save:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="refSaveBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Fortitude Save:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="fortSaveBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Will Save:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="willSaveBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Luck Roll:</g:Label>
+							<g:TextArea styleName="{style.important}" ui:field="luckyRollBox"></g:TextArea>
+						</g:HorizontalPanel>
+					</g:VerticalPanel>
+					<g:VerticalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Melee Attack:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="meleeAttackBox"></g:TextBox>
+							<g:Label>Melee Damage:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="meleeDamageBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Missile Attack:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="missileAttackBox"></g:TextBox>
+							<g:Label>Missile Damage:</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="missileDamageBox"></g:TextBox>
+						</g:HorizontalPanel>
+						<g:HorizontalPanel>
+							<g:Label>Languages</g:Label>
+							<g:TextBox styleName="{style.important}" ui:field="languagesBox"></g:TextBox>
+						</g:HorizontalPanel>
+					</g:VerticalPanel>
+				</g:HorizontalPanel>
+			</g:VerticalPanel>
+			<g:VerticalPanel>
+				<g:HorizontalPanel>
+					<g:VerticalPanel>
+						<g:VerticalPanel>
+							<g:Label>Weapons</g:Label>
+							<g:HorizontalPanel ui:field="weaponPanel">
+							</g:HorizontalPanel>
+						</g:VerticalPanel>
+						<g:VerticalPanel>
+							<g:Label>Treasure</g:Label>
+							<g:TextArea ui:field="treasureBox"></g:TextArea>
+						</g:VerticalPanel>
+					</g:VerticalPanel>
+					<g:VerticalPanel>
+						<g:VerticalPanel>
+							<g:Label>Equipment</g:Label>
+							<g:HorizontalPanel ui:field="equipmentPanel">
+							</g:HorizontalPanel>
+						</g:VerticalPanel>
+						<g:VerticalPanel>
+							<g:Label>Armor</g:Label>
+							<g:HorizontalPanel ui:field="armorPanel">
+							</g:HorizontalPanel>
+						</g:VerticalPanel>
+					</g:VerticalPanel>
+				</g:HorizontalPanel>
+				<g:VerticalPanel ui:field="classPanel">
+				</g:VerticalPanel>
+			</g:VerticalPanel>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+
+
+</ui:UiBinder> 

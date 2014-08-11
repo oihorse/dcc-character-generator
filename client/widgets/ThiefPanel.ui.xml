@@ -1,0 +1,83 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:VerticalPanel>
+		<g:Grid>
+			<g:row>
+				<g:cell>Luck die</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="luckDieBox"></g:TextBox>
+				</g:customCell>
+				<g:cell>Disable trap</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="disableTrapBox"></g:TextBox>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:cell>Backstab</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="backStabBox"></g:TextBox>
+				</g:customCell>
+				<g:cell>Forge document</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="forgeDocumentBox"></g:TextBox>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:cell>Sneak Silently</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="sneakSilentlyBox"></g:TextBox>
+				</g:customCell>
+				<g:cell>Disguise self</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="disguiseSelfBox"></g:TextBox>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:cell>Hide in shadows</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="hideInShadowsBox"></g:TextBox>
+				</g:customCell>
+				<g:cell>Read languaegs</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="readLanguagesBox"></g:TextBox>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:cell>Pick pocket</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="pickPocketBox"></g:TextBox>
+				</g:customCell>
+				<g:cell>Handle poison</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="handlePoisonBox"></g:TextBox>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:cell>Climb sheer surfaces</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="climbSheerSurfacesBox"></g:TextBox>
+				</g:customCell>
+				<g:cell>Cast spell from scroll</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="castSpellFromScrollBox"></g:TextBox>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:cell>Pick lock</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="pickLockBox"></g:TextBox>
+				</g:customCell>
+				<g:cell>Find trap</g:cell>
+				<g:customCell>
+					<g:TextBox ui:field="findTrapBox"></g:TextBox>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<g:Label>Notes:</g:Label>
+		<g:TextArea></g:TextArea>
+	</g:VerticalPanel>
+</ui:UiBinder> 

@@ -1,0 +1,42 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	/* Add CSS here. See the GWT docs on UI Binder for more details */
+	.important {
+		font-weight: bold;
+		align: center;
+	}
+	
+	.center {
+		width: 400px;
+		height: 160px;
+		background-color: #70DBDB;
+		margin: 0px auto;
+		padding: 10px;
+	}
+	</ui:style>
+	<g:HTMLPanel styleName="{style.center}">
+		<!-- Add GWT widgets here. Enter < and hit Ctrl-Space to auto-complete 
+			widget names. The ui:field attribute binds an element to a field in the owner 
+			class. See the GWT docs on UI Binder for more details. -->
+		Occupation:
+		<g:ListBox styleName="{style.important}" ui:field="occupationBox"></g:ListBox>
+		<g:Button ui:field="generateOccupation">Random</g:Button>
+		<br />
+		Class:
+		<g:ListBox styleName="{style.important}" ui:field="classBox"></g:ListBox>
+		<br />
+		Level:
+		<g:ListBox styleName="{style.important}" ui:field="levelBox"></g:ListBox>
+		<br />
+		Alignment:
+		<g:ListBox styleName="{style.important}" ui:field="alignmentBox"></g:ListBox>
+		<br />
+		Name:
+		<g:TextBox styleName="{style.important}" ui:field="nameBox"></g:TextBox>
+		<br />
+		<g:Button styleName="{style.important}" ui:field="nextButton">Next</g:Button>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 
