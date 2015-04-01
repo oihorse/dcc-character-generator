@@ -1,0 +1,1 @@
+This app creates characters for the DCC RPG, calculating stats and modifiers, as well as being able to add equipment and treasure.
